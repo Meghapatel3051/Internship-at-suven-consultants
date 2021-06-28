@@ -1,0 +1,92 @@
+/* 
+default styles here for older browsers. 
+I tend to go for a 600px - 960px width max but using percentages
+*/
+td:hover {
+  background-color: #dedede;
+  border-radius: 0.3rem;
+}
+
+.eventbtn{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.daytext {
+  font-size: 24px;
+  margin: 0.7rem;
+  text-align: center;
+}
+
+#loginform {
+  max-width: 520px;
+}
+
+.eventtag{
+  position: absolute;
+  background: yellow;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  bottom: 4px;
+  left: 4px;
+  margin: 0;
+  font-size: 12px;
+}
+
+.removeEventbtn{
+  display: inline;
+  color: white;
+  position: absolute;
+  top: 4px;
+  /* font-size: 16px; */
+  right: 4px;
+  background: transparent;
+  border: none;
+}
+.removeEventbtn:hover{
+  color: red;
+}
+
+@media only screen and (min-width: 960px) {
+  /* styles for browsers larger than 960px; */
+  .daytext {
+    font-size: 24px;
+    margin: 0.7rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  /* styles for browsers larger than 1440px; */
+  .daytext {
+    font-size: 24px;
+    margin: 1rem;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  /* for sumo sized (mac) screens */
+  .daytext {
+    font-size: 32px;
+    margin: 1.2rem;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+  .daytext {
+    font-size: 12px;
+    margin: 0.2rem;
+  }
+  .eventtag{
+    font-size: 8px;
+  }
+}
+@media only screen and (device-width: 768px) {
+  /* default iPad screens */
+  .daytext {
+    font-size: 16px;
+    margin: 0.4rem;
+  }
+  .eventtag{
+    font-size: 10px;
+  }
+}
